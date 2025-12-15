@@ -50,7 +50,8 @@ export const DetailItem = styled.p`
 
   span {
     font-weight: 600;
-    color: var(--color-primary-dark);
+    // color: var(--color-primary-dark);
+    color: black;
   }
 `;
 
