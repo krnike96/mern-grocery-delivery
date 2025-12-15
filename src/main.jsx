@@ -1,9 +1,12 @@
-import React from 'react-dom/client';
-import ReactDOM from 'react-dom';
+// src/main.jsx (Corrected Code)
+
+import React from 'react'; // Standard import
+import ReactDOM from 'react-dom/client'; // Corrected import path for createRoot
 import App from './App.jsx';
 import { GlobalStyle } from './styles/GlobalStyle.js';
-import 'react-toastify/dist/ReactToastify.css'; // Import Toastify CSS
+import 'react-toastify/dist/ReactToastify.css';
 
+// We must call createRoot on the container element
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <GlobalStyle />
