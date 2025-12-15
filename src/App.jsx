@@ -8,6 +8,9 @@ import Navbar from "./components/layout/Navbar/Navbar-component";
 import RegisterPage from "./components/auth/Register/Register-component";
 import LoginPage from "./components/auth/Login/Login-component";
 import UserDashboard from './components/user/Dashboard/Dashboard-component.jsx';
+import AdminDashboard from './components/admin/Dashboard/Dashboard-component.jsx';
+import DeliveryDashboard from './components/delivery/Dashboard/Dashboard-component.jsx';
+import CheckoutPage from './components/cart/Checkout/Checkout-component.jsx';
 
 // Create a simple styled layout container
 const Layout = styled.div`
@@ -37,11 +40,12 @@ function App() {
             {/* Auth Routes */}
             <Route path="/login" element={< LoginPage/>} />
             <Route path="/register" element={<RegisterPage />} />
+            <Route path="/cart" element={<CheckoutPage />} />
 
             {/* Future Dashboard Routes */}
             <Route path="/" element={<UserDashboard />} />
-            <Route path="/admin" element={<h1>Admin Dashboard</h1>} />
-            <Route path="/delivery" element={<h1>Delivery Dashboard</h1>} />
+            <Route path="/admin" element={<AdminDashboard />} />
+            <Route path="/delivery" element={<DeliveryDashboard />} />
           </Routes>
         </MainContent>
 
